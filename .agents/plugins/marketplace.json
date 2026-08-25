@@ -5,10 +5,10 @@
   },
   "plugins": [
     {
-      "name": "paper-figure-loom",
+      "name": "paper-figure-skill",
       "source": {
         "source": "local",
-        "path": "./plugins/paper-figure-loom"
+        "path": "./plugins/paper-figure-skill"
       },
       "policy": {
         "installation": "AVAILABLE",

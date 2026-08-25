@@ -8,5 +8,5 @@
 - Added editable `@oai/artifact-tool` PPTX construction and XML editability checks.
 - Added structural, visual-difference, asset-region, and packaging release gates.
 - Added original vector and hybrid replay fixtures plus local artifact-tool smoke coverage.
-- Renamed the project to Paper Figure Loom and the Skill to `rebuild-paper-figures`.
+- Renamed the project to Paper Figure Skill and the Skill to `paper-figure`.
 - Made the documented master-to-assets-to-recomposition workflow enforceable: every image instance must be inventoried, grounded assets default to separate regeneration, transparent-background outputs are gated, and PPTX non-connector z-order follows the master.

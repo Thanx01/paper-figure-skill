@@ -1,7 +1,7 @@
 [
   {
     "id": "direct",
-    "request": "$rebuild-paper-figures rebuild this attached framework figure as editable PPTX",
+    "request": "$paper-figure rebuild this attached framework figure as editable PPTX",
     "should_activate": true
   },
   {
@@ -22,7 +22,7 @@
   },
   {
     "id": "resume",
-    "request": "Resume the interrupted Paper Figure Loom run from its run-state.json",
+    "request": "Resume the interrupted Paper Figure Skill run from its run-state.json",
     "should_activate": true,
     "expected_result": "resume"
   }

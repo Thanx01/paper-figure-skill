@@ -6,4 +6,4 @@ coverage/
 *.tmp
 *.zip
 tests/private-fixtures/
-plugins/paper-figure-loom/skills/rebuild-paper-figures/assets/private/
+plugins/paper-figure-skill/skills/paper-figure/assets/private/

@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1800" height="960" viewBox="0 0 1800 960" role="img" aria-labelledby="title desc">
-  <title id="title">Paper Figure Loom workflow</title>
+  <title id="title">Paper Figure Skill workflow</title>
   <desc id="desc">A bilingual flowchart showing canonical master creation, two-pass fine-grained inventory, transparent asset regeneration, editable PowerPoint recomposition, visual QA, local repair, and final delivery.</desc>
   <defs>
     <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
@@ -66,12 +66,12 @@
   <circle cx="1510" cy="52" r="150" fill="#2563eb" opacity="0.08" filter="url(#softGlow)"/>
   <circle cx="1190" cy="888" r="170" fill="#7c3aed" opacity="0.08" filter="url(#softGlow)"/>
 
-  <!-- Loom threads -->
+  <!-- Workflow connectors -->
   <path d="M82 155 C430 116, 650 172, 940 140 S1450 115, 1715 150" fill="none" stroke="#38bdf8" stroke-width="2" opacity="0.22"/>
   <path d="M82 164 C430 203, 650 136, 940 170 S1450 198, 1715 157" fill="none" stroke="#a78bfa" stroke-width="2" opacity="0.2"/>
   <path d="M82 173 C430 145, 650 202, 940 158 S1450 136, 1715 168" fill="none" stroke="#34d399" stroke-width="2" opacity="0.18"/>
 
-  <text x="80" y="58" class="eyebrow">PAPER FIGURE LOOM</text>
+  <text x="80" y="58" class="eyebrow">Paper Figure Skill</text>
   <text x="80" y="108" class="title">Master → fine-grained assets → editable figure</text>
   <text x="80" y="140" class="subtitle">母图 → 细粒度透明素材 → 原位拼回可编辑框架图</text>
 

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Paper Figure"
+  short_description: "Regenerate visual parts, then rebuild the slide"
+  default_prompt: "Use $paper-figure to regenerate every fine-grained UI, icon, and illustration from the attached master as a transparent asset, then rebuild an editable PowerPoint at the original positions and check it against the master."

@@ -1,0 +1,26 @@
+{
+  "name": "paper-figure-skill",
+  "version": "0.1.0",
+  "description": "Create or accept a paper-figure master, regenerate its fine-grained visual parts as transparent assets, and recompose them as an editable PowerPoint.",
+  "author": {
+    "name": "Paper Figure Skill contributors"
+  },
+  "homepage": "https://github.com/Thanx01/paper-figure-skill",
+  "repository": "https://github.com/Thanx01/paper-figure-skill",
+  "license": "MIT",
+  "keywords": ["academic-figure", "diagram", "paper", "powerpoint", "svg"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Paper Figure Skill",
+    "shortDescription": "Build editable research figures in PowerPoint",
+    "longDescription": "Give Paper Figure Skill a paper or a reference figure. It maps the composition, creates reusable transparent assets, rebuilds native text, shapes, and connectors in PowerPoint, and delivers visual-verification evidence.",
+    "developerName": "Paper Figure Skill contributors",
+    "category": "Productivity",
+    "capabilities": ["Create", "Write", "Image Generation", "Presentations"],
+    "websiteURL": "https://github.com/Thanx01/paper-figure-skill",
+    "defaultPrompt": [
+      "Regenerate every fine-grained visual asset from this master figure with a transparent background, then recompose an editable PowerPoint at the original positions.",
+      "Create a complete method-figure master from this paper, regenerate its fine-grained UI and icon assets, and compose an editable verified PowerPoint."
+    ]
+  }
+}

@@ -1,10 +1,10 @@
 {
-  "name": "paper-figure-loom-workspace",
+  "name": "paper-figure-skill-workspace",
   "version": "0.1.0",
   "private": true,
   "type": "module",
   "packageManager": "pnpm@11.16.0",
-  "description": "Development and replay-test workspace for the Paper Figure Loom Codex plugin.",
+  "description": "Development and replay-test workspace for the Paper Figure Skill Codex plugin.",
   "scripts": {
     "test": "node --test tests/*.test.mjs",
     "test:replay": "node --test tests/replay.test.mjs",

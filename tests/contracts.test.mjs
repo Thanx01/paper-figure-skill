@@ -7,7 +7,7 @@ import {
   validateDesignSpec,
   validateRequest,
   validateSceneGraph,
-} from "../plugins/paper-figure-loom/skills/rebuild-paper-figures/scripts/lib/contracts.mjs";
+} from "../plugins/paper-figure-skill/skills/paper-figure/scripts/lib/contracts.mjs";
 import { fixturePath, json } from "./helpers.mjs";
 
 test("public fixtures satisfy all semantic contracts", async () => {
