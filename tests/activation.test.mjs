@@ -5,7 +5,7 @@ import test from "node:test";
 import { repoRoot, json } from "./helpers.mjs";
 
 test("skill metadata covers the published activation corpus", async () => {
-  const skill = await fs.readFile(path.join(repoRoot, "plugins/paper-figure-loom/skills/rebuild-paper-figures/SKILL.md"), "utf8");
+  const skill = await fs.readFile(path.join(repoRoot, "plugins/paper-figure-skill/skills/paper-figure/SKILL.md"), "utf8");
   const cases = await json(path.join(repoRoot, "tests/fixtures/activation-cases.json"));
   for (const phrase of ["academic figure", "PowerPoint", "SVG/PNG", "paper-to-figure", "interruption"] ) {
     assert.match(skill, new RegExp(phrase, "i"));

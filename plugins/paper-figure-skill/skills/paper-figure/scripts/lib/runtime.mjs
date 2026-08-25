@@ -7,7 +7,7 @@ import { exists } from "./common.mjs";
 function moduleRoots() {
   const roots = [];
   for (const value of [
-    process.env.PAPER_FIGURE_LOOM_NODE_MODULES,
+    process.env.PAPER_FIGURE_SKILL_NODE_MODULES,
     process.env.PAPER_DIAGRAM_FORGE_NODE_MODULES,
     ...(process.env.NODE_PATH ?? "").split(path.delimiter),
     path.join(process.cwd(), "node_modules"),
@@ -28,7 +28,7 @@ export async function loadPackage(packageName) {
   for (const root of moduleRoots()) {
     if (!(await exists(root))) continue;
     try {
-      const resolver = createRequire(path.join(root, "paper-figure-loom-resolver.cjs"));
+      const resolver = createRequire(path.join(root, "paper-figure-skill-resolver.cjs"));
       const resolved = resolver.resolve(packageName);
       return await import(pathToFileURL(resolved).href);
     } catch (error) {
@@ -37,7 +37,7 @@ export async function loadPackage(packageName) {
   }
 
   throw new Error(
-    `Unable to load ${packageName}. In Codex Desktop, call load_workspace_dependencies and set PAPER_FIGURE_LOOM_NODE_MODULES to its Node.js packages path. ${failures.join(" | ")}`,
+    `Unable to load ${packageName}. In Codex Desktop, call load_workspace_dependencies and set PAPER_FIGURE_SKILL_NODE_MODULES to its Node.js packages path. ${failures.join(" | ")}`,
   );
 }
 

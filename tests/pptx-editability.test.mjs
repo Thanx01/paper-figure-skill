@@ -2,8 +2,8 @@ import assert from "node:assert/strict";
 import fs from "node:fs/promises";
 import path from "node:path";
 import test from "node:test";
-import { inspectPptxEditability } from "../plugins/paper-figure-loom/skills/rebuild-paper-figures/scripts/lib/qa.mjs";
-import { loadJszip } from "../plugins/paper-figure-loom/skills/rebuild-paper-figures/scripts/lib/runtime.mjs";
+import { inspectPptxEditability } from "../plugins/paper-figure-skill/skills/paper-figure/scripts/lib/qa.mjs";
+import { loadJszip } from "../plugins/paper-figure-skill/skills/paper-figure/scripts/lib/runtime.mjs";
 import { temporaryDirectory } from "./helpers.mjs";
 
 test("PPTX XML gate detects near-full-slide flattening", async () => {

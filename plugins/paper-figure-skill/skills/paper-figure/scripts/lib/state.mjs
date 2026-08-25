@@ -167,7 +167,7 @@ async function pendingAssetAction(runDir, state) {
 export async function nextAction(runDir, state) {
   if (state.status === "blocked") {
     if (state.stages.package.status === "completed") {
-      return { action: "deliver_blocker", artifact: "paper-figure-loom-blocker.zip", blocker: state.blocker };
+      return { action: "deliver_blocker", artifact: "paper-figure-skill-blocker.zip", blocker: state.blocker };
     }
     return {
       action: "script.package_blocker",
@@ -176,7 +176,7 @@ export async function nextAction(runDir, state) {
     };
   }
   if (state.status === "completed") {
-    return { action: "deliver", artifact: "paper-figure-loom-delivery.zip" };
+    return { action: "deliver", artifact: "paper-figure-skill-delivery.zip" };
   }
 
   if (state.stages.design.status !== "completed") {
@@ -224,5 +224,5 @@ export async function nextAction(runDir, state) {
   if (state.stages.package.status !== "completed") {
     return { action: "script.package", command: "package --run-dir <RUN_DIR>" };
   }
-  return { action: "deliver", artifact: "paper-figure-loom-delivery.zip" };
+  return { action: "deliver", artifact: "paper-figure-skill-delivery.zip" };
 }

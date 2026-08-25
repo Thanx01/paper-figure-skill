@@ -179,7 +179,7 @@ export async function renderSceneSvg(scene, manifest, runDir, { elements = null,
 export async function writeCompositeSvg(scene, manifest, runDir) {
   const output = path.join(runDir, "framework.svg");
   const svg = await renderSceneSvg(scene, manifest, runDir, {
-    metadata: { generator: "paper-figure-loom", schema_version: "1.0" },
+    metadata: { generator: "paper-figure-skill", schema_version: "1.0" },
   });
   await atomicWriteText(output, svg);
   return output;

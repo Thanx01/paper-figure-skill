@@ -2,8 +2,8 @@ import assert from "node:assert/strict";
 import fs from "node:fs/promises";
 import path from "node:path";
 import test from "node:test";
-import { loadSharp } from "../plugins/paper-figure-loom/skills/rebuild-paper-figures/scripts/lib/runtime.mjs";
-import { loadJszip } from "../plugins/paper-figure-loom/skills/rebuild-paper-figures/scripts/lib/runtime.mjs";
+import { loadSharp } from "../plugins/paper-figure-skill/skills/paper-figure/scripts/lib/runtime.mjs";
+import { loadJszip } from "../plugins/paper-figure-skill/skills/paper-figure/scripts/lib/runtime.mjs";
 import { fixturePath, json, prepareRecordedRun, runForge } from "./helpers.mjs";
 
 test("asset manifest recording creates grounded reference crops and chroma-key recording creates alpha", async () => {

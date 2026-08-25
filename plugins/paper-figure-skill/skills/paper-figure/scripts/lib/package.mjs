@@ -94,7 +94,7 @@ export async function packageRun(runDir) {
   await atomicWriteJson(path.join(runDir, "provenance.json"), provenance);
   await addFile(zip, runDir, path.join(runDir, "provenance.json"), "provenance.json");
 
-  const outputName = blocked ? "paper-figure-loom-blocker.zip" : "paper-figure-loom-delivery.zip";
+  const outputName = blocked ? "paper-figure-skill-blocker.zip" : "paper-figure-skill-delivery.zip";
   const packagedState = structuredClone(state);
   setStage(packagedState, "package", "completed", { artifacts: [outputName] });
   if (!blocked) finishRun(packagedState);

@@ -1,9 +1,9 @@
 ---
-name: rebuild-paper-figures
+name: paper-figure
 description: Rebuild an academic figure or framework diagram as an editable single-slide PowerPoint by first creating or accepting a complete master image, then exhaustively regenerating every distinct UI, icon, illustration, and decoration as a separate transparent asset, and finally recomposing those assets to match the master. Use for paper method figures, model architecture diagrams, faithful PowerPoint reconstruction, fine-grained UI or icon cutouts, SVG/PNG asset delivery, paper-to-figure workflows, and interruption recovery.
 ---
 
-# Rebuild Paper Figures
+# Paper Figure
 
 Run the complete master-to-assets-to-PowerPoint workflow without requesting intermediate approval. Stop only when an input is unreadable, a required built-in capability is unavailable, or a declared gate cannot pass. Do not switch to web-chat automation or an API-key-backed image workflow.
 
@@ -30,7 +30,7 @@ Run the complete master-to-assets-to-PowerPoint workflow without requesting inte
 ## Initialize the run
 
 1. Call `load_workspace_dependencies`. Use its bundled Node executable and Node package path.
-2. Set `PAPER_FIGURE_LOOM_NODE_MODULES` to that package path.
+2. Set `PAPER_FIGURE_SKILL_NODE_MODULES` to that package path.
 3. Initialize an artifact-tool workspace with the presentation skill helper `container_tools/setup_artifact_tool_workspace.mjs --workspace <run-parent>`.
 4. Create `request.json` with absolute paths, a dedicated run directory, and optional `output_dir`.
 5. Run:

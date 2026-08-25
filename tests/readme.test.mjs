@@ -6,7 +6,7 @@ import { repoRoot } from "./helpers.mjs";
 
 const englishPath = path.join(repoRoot, "README.md");
 const chinesePath = path.join(repoRoot, "README_CN.md");
-const workflowPath = path.join(repoRoot, "docs/paper-figure-loom-workflow.svg");
+const workflowPath = path.join(repoRoot, "docs/paper-figure-skill-workflow.svg");
 
 test("English and Chinese READMEs link to each other and document real usage", async () => {
   const [english, chinese] = await Promise.all([
@@ -18,20 +18,20 @@ test("English and Chinese READMEs link to each other and document real usage", a
   assert.match(chinese, /\[English\]\(README\.md\)/);
 
   for (const readme of [english, chinese]) {
-    assert.match(readme, /docs\/paper-figure-loom-workflow\.svg/);
-    assert.match(readme, /codex plugin marketplace add Thanx01\/paper-figure-loom --ref main/);
-    assert.match(readme, /\$rebuild-paper-figures/);
+    assert.match(readme, /docs\/paper-figure-skill-workflow\.svg/);
+    assert.match(readme, /codex plugin marketplace add Thanx01\/paper-figure-skill --ref main/);
+    assert.match(readme, /\$paper-figure/);
     assert.match(readme, /forge\.mjs init/);
     assert.match(readme, /forge\.mjs next/);
     assert.match(readme, /run-state\.json/);
-    assert.match(readme, /paper-figure-loom-delivery\.zip/);
+    assert.match(readme, /paper-figure-skill-delivery\.zip/);
   }
 });
 
 test("README workflow graphic is self-contained and scalable", async () => {
   const workflow = await fs.readFile(workflowPath, "utf8");
   assert.match(workflow, /<svg\b[^>]*viewBox="0 0 1800 960"/);
-  assert.match(workflow, /Paper Figure Loom workflow/);
+  assert.match(workflow, /Paper Figure Skill workflow/);
   assert.match(workflow, /CANONICAL MASTER/);
   assert.match(workflow, /TRANSPARENT ASSETS/);
   assert.match(workflow, /EDITABLE REBUILD/);
