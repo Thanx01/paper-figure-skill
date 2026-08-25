@@ -7,7 +7,7 @@ Do not split text into glyphs or connectors into line fragments. Keep ordinary t
 ## Complete two discovery passes
 
 1. Semantic pass: inventory every module, text item, connector, obvious UI component, icon, and complex visual.
-2. Residual pass: inspect all pixels not yet explained. Add missed small icons, badges, decoration, shadows that belong to an object, and partially occluded visuals.
+2. Residual pass: inspect the remaining pixels. Add missed small icons, badges, decoration, shadows that belong to an object, and partially occluded visuals.
 
 Record completion in the manifest:
 

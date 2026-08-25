@@ -41,7 +41,7 @@ async function structuralChecks(runDir, design, scene, manifest, thresholds) {
     const expected = textValue(expectedValue);
     const actual = byId.get(textId);
     if (!actual || actual.type !== "text") errors.push(`Missing native text element: ${textId}`);
-    else if (expected !== null && actual.text !== expected) errors.push(`Verbatim text mismatch for ${textId}.`);
+    else if (expected !== null && actual.text !== expected) errors.push(`Verbatim text differs for ${textId}.`);
   }
   for (const job of manifest.jobs ?? []) {
     if (job.status !== "completed") errors.push(`Asset job is not completed: ${job.id}`);
