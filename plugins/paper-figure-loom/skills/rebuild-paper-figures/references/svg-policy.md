@@ -6,7 +6,7 @@ Every reusable asset has a PNG and an SVG, but the SVG file extension does not i
 
 Use `vector_kind: native-vector` when the SVG contains editable primitives such as `<path>`, `<rect>`, `<ellipse>`, `<polygon>`, and `<text>`. It must not contain `<image>`.
 
-Use it for simple UI, panels, arrows, cards, geometric diagrams, badges, and icons that can be reproduced without texture loss.
+Use it for simple UI, panels, arrows, cards, geometric diagrams, badges, and icons that retain their appearance as vectors.
 
 ## Embedded raster
 
@@ -19,5 +19,5 @@ Use it for people, mascots, card artwork, shadows, gradients, textures, and comp
 - Give every SVG an explicit width, height, and `viewBox`.
 - Embed raster bytes; do not reference absolute paths, `file:` URLs, network URLs, or run-directory files.
 - Keep asset ids stable and include strategy metadata.
-- Never stretch an asset to fill a mismatched box.
+- Never stretch an asset into a box with different proportions.
 - Use transparent PNG in PPTX for complex assets; keep the SVG as a separate delivery artifact.
