@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="500" viewBox="0 0 1600 500" role="img" aria-labelledby="title desc">
+  <title id="title">Paper Figure Loom</title>
+  <desc id="desc">From paper or master figure to fine-grained assets, editable PowerPoint, and visual quality assurance.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071426"/><stop offset="0.55" stop-color="#10243E"/><stop offset="1" stop-color="#39235D"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38BDF8"/><stop offset="0.5" stop-color="#8B5CF6"/><stop offset="1" stop-color="#FB7185"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="24"/></filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 Z" fill="#A5B4FC"/></marker>
+  </defs>
+  <rect width="1600" height="500" rx="28" fill="url(#bg)"/>
+  <circle cx="1360" cy="42" r="210" fill="#A855F7" opacity="0.14" filter="url(#glow)"/>
+  <circle cx="110" cy="460" r="220" fill="#0EA5E9" opacity="0.12" filter="url(#glow)"/>
+  <rect x="98" y="78" width="8" height="188" rx="4" fill="url(#accent)"/>
+  <text x="140" y="132" fill="#7DD3FC" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="5">CODEX SKILL FOR RESEARCH FIGURES</text>
+  <text x="140" y="211" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="72" font-weight="750">Paper Figure Loom</text>
+  <text x="140" y="260" fill="#CBD5E1" font-family="Inter, Arial, sans-serif" font-size="28">Paper or master → transparent assets → editable PowerPoint → visual QA</text>
+  <g transform="translate(140 326)" font-family="Inter, Arial, sans-serif">
+    <g>
+      <rect width="230" height="96" rx="19" fill="#0E223A" stroke="#38BDF8" stroke-opacity="0.75" stroke-width="2"/>
+      <path d="M30 24 H66 L82 40 V73 H30 Z M66 24 V40 H82" fill="none" stroke="#7DD3FC" stroke-width="3" stroke-linejoin="round"/>
+      <text x="102" y="47" fill="#F8FAFC" font-size="21" font-weight="700">Paper / Master</text><text x="102" y="72" fill="#94A3B8" font-size="15">one visual source</text>
+    </g>
+    <path d="M248 48 H312" fill="none" stroke="#A5B4FC" stroke-width="3" marker-end="url(#arrow)"/>
+    <g transform="translate(334 0)">
+      <rect width="230" height="96" rx="19" fill="#181C3B" stroke="#8B5CF6" stroke-opacity="0.82" stroke-width="2"/>
+      <rect x="27" y="25" width="34" height="34" rx="8" fill="#8B5CF6" fill-opacity="0.25" stroke="#C4B5FD" stroke-width="2"/><rect x="43" y="39" width="34" height="34" rx="8" fill="#8B5CF6" fill-opacity="0.4" stroke="#DDD6FE" stroke-width="2"/>
+      <text x="96" y="47" fill="#F8FAFC" font-size="21" font-weight="700">Fine Assets</text><text x="96" y="72" fill="#A5B4FC" font-size="15">one object per file</text>
+    </g>
+    <path d="M582 48 H646" fill="none" stroke="#A5B4FC" stroke-width="3" marker-end="url(#arrow)"/>
+    <g transform="translate(668 0)">
+      <rect width="230" height="96" rx="19" fill="#251B3C" stroke="#C084FC" stroke-opacity="0.82" stroke-width="2"/>
+      <rect x="28" y="24" width="51" height="48" rx="6" fill="#FFFFFF" fill-opacity="0.1" stroke="#E9D5FF" stroke-width="2"/><path d="M38 58 L50 46 L61 55 L70 37" fill="none" stroke="#F0ABFC" stroke-width="3" stroke-linecap="round"/>
+      <text x="99" y="47" fill="#F8FAFC" font-size="21" font-weight="700">Editable PPTX</text><text x="99" y="72" fill="#C4B5FD" font-size="15">native text + shapes</text>
+    </g>
+    <path d="M916 48 H980" fill="none" stroke="#A5B4FC" stroke-width="3" marker-end="url(#arrow)"/>
+    <g transform="translate(1002 0)">
+      <rect width="230" height="96" rx="19" fill="#321C34" stroke="#FB7185" stroke-opacity="0.85" stroke-width="2"/>
+      <circle cx="52" cy="48" r="23" fill="#FB7185" fill-opacity="0.16" stroke="#FDA4AF" stroke-width="2"/><path d="M41 49 L49 57 L65 39" fill="none" stroke="#FFE4E6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="92" y="47" fill="#F8FAFC" font-size="21" font-weight="700">Visual QA</text><text x="92" y="72" fill="#FDA4AF" font-size="15">compare + repair</text>
+    </g>
+  </g>
+</svg>
