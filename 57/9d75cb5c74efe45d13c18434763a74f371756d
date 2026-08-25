@@ -1,0 +1,23 @@
+plugins/paper-figure-loom/skills/rebuild-paper-figures/references/asset-policy.md
+  s_313b1173261cfc::t_0b5bd0169d1b39 10
+plugins/paper-figure-loom/skills/rebuild-paper-figures/references/svg-policy.md
+  s_313b1173261cfc::t_4398915b4349ed 9,22
+plugins/paper-figure-loom/skills/rebuild-paper-figures/scripts/lib/qa.mjs
+  s_313b1173261cfc::t_f76e2ae791756f 44
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.7",
+  "base_commit_sha": "579d75cb5c74efe45d13c18434763a74f371756d",
+  "prompts": {},
+  "sessions": {
+    "s_313b1173261cfc": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0380f-fd5a-7843-98ad-693d5a745bb8",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "xuzhouzheng <xuzhouzheng@kingsoft.com>"
+    }
+  }
+}
