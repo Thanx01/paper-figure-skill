@@ -6,6 +6,7 @@ import { repoRoot } from "./helpers.mjs";
 
 const englishPath = path.join(repoRoot, "README.md");
 const chinesePath = path.join(repoRoot, "README_CN.md");
+const bannerPath = path.join(repoRoot, "assets/banner.svg");
 const workflowPath = path.join(repoRoot, "docs/paper-figure-skill-workflow.svg");
 
 test("English and Chinese READMEs link to each other and document real usage", async () => {
@@ -38,4 +39,18 @@ test("README workflow graphic is self-contained and scalable", async () => {
   assert.match(workflow, /RENDER &amp; VISUAL QA/);
   assert.doesNotMatch(workflow, /(?:href|src)="(?:https?:|file:)/i);
   assert.doesNotMatch(workflow, /<image\b/i);
+});
+
+test("README banner constrains long labels to the card safe area", async () => {
+  const banner = await fs.readFile(bannerPath, "utf8");
+  const card = banner.match(/<g transform="translate\(644 0\)" data-card-width="(\d+)">([\s\S]*?)<\/g>/);
+  assert.ok(card, "editable-PPTX card must declare its width");
+
+  const cardWidth = Number(card[1]);
+  const fittedTexts = [...card[2].matchAll(/<text data-fit="card" x="(\d+)"[^>]*textLength="(\d+)"/g)];
+  assert.equal(fittedTexts.length, 2);
+
+  for (const [, x, textLength] of fittedTexts) {
+    assert.ok(Number(x) + Number(textLength) <= cardWidth - 16, "card text must retain a 16px right inset");
+  }
 });
