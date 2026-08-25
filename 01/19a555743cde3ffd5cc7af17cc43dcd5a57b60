@@ -1,0 +1,21 @@
+assets/banner.svg
+  s_50ee94a1548c8d::t_71b8a46e4b8a0b 23,27-29,33-35,37,39-41
+tests/readme.test.mjs
+  s_50ee94a1548c8d::t_e4ae295efa3594 9,43-56
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.7",
+  "base_commit_sha": "0119a555743cde3ffd5cc7af17cc43dcd5a57b60",
+  "prompts": {},
+  "sessions": {
+    "s_50ee94a1548c8d": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fd145-e9dc-7470-8c91-c6df968f1ef9",
+        "model": "unknown"
+      },
+      "human_author": "xuzhouzheng <xuzhouzheng@kingsoft.com>"
+    }
+  }
+}
